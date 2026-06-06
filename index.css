@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1598048145816-4351333e903a?q=80&w=2000') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#f3cf05f5 ;
+    box-shadow:0 0 50px #fdd807;
+}
+
+/* Sab divs ko ek line mein lane ke liye */
+.main div:not(.main) {
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffd700; /* Gold color for numbers */
+}
+
+/* Chote screens ke liye responsive */
+@media (max-width: 600px) {
+    .main div:not(.main) {
+        width: 70px;
+        font-size: 0.9rem;
+        margin: 5px;
+    }
+}
